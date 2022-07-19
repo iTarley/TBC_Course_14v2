@@ -8,4 +8,6 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="floatingButton">#FFEB3B</color>
+    <color name="male_color">#2196F3</color>
+    <color name="female_color">#DF14D5</color>
 </resources>

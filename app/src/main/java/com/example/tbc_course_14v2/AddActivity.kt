@@ -54,23 +54,33 @@ class AddActivity : AppCompatActivity() {
 
     }
 
-
-
     private fun addItem() {
-        logoContent.add(
-            Content(
-                binding.nameEditText.text.toString(),
-                binding.descriptionEditText.text.toString()
+        if(binding.genderSwitcher.isChecked){
+            logoContent.add(
+                Content(
+                    binding.nameEditText.text.toString(),
+                    binding.descriptionEditText.text.toString(),
+                    gender = true
+                )
             )
-        )
+        }else{
+            logoContent.add(
+                Content(
+                    binding.nameEditText.text.toString(),
+                    binding.descriptionEditText.text.toString(),
+                    gender = false
+                )
+            )
+        }
+
         finish()
     }
 
     private fun editItem() {
-
         logoContent[getPosition].apply {
             name = binding.nameEditText.text.toString()
             description = binding.descriptionEditText.text.toString()
+            gender = binding.genderSwitcher.isChecked
 
         }
         finish()

@@ -50,9 +50,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         binding.refresher.setOnRefreshListener {
-// ბევრი ვიწვალე მაგრავ ვერანაირად ვერ მოვახერხე რომ ui დაავაფდეიტო ედითის შემდეგ "sumbitList" ფუნქციით
-// თვითონ ლისტი იცვლება edit-ის შემდეგ მაგრამ ეკრანზე მაინც ძველი ინფორმაცია რჩება
-            contentAdapter.notifyDataSetChanged()
+            contentAdapter.submitList(logoContent)
             binding.refresher.isRefreshing = false
         }
     }
