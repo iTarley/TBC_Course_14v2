@@ -1,6 +1,6 @@
-# Recyclew View ListAdapter CRUD
+# RecyclerView ListAdapter CRUD
 ## TBC_Course_14v2
-Homework#14(Recyclew View ListAdapter CRUD)
+Homework#14(RecyclerView ListAdapter CRUD)
 
 
 
